@@ -1,0 +1,22 @@
+String commonImgPath = 'assets/images/';
+
+String OBcircle = "${commonImgPath}OBcircle.png";
+String OBman = "${commonImgPath}OBman.png";
+String OBmesseges = "${commonImgPath}OBmesseges.png";
+String OBphone = "${commonImgPath}OBphone.png";
+String OBMobileChat = "${commonImgPath}OBMobileChat.png";
+String OBwoman = "${commonImgPath}OBwoman.png";
+String OBbook = "${commonImgPath}OBbook.png";
+String OBflowerPot = "${commonImgPath}OBflowerPot.png";
+String OBbook2 = "${commonImgPath}OBbook2.png";
+String OBwoman2 = "${commonImgPath}OBwoman2.png";
+String OBwoman4 = "${commonImgPath}OBwoman4.png";
+String OB1= "${commonImgPath}OB1.png";
+String OB2= "${commonImgPath}OB2.png";
+String OB3= "${commonImgPath}OB3.png";
+String OB4= "${commonImgPath}OB4.png";
+String OBmobile2= "${commonImgPath}OBmobile2.png";
+String OBmobile4= "${commonImgPath}OBmobile4.png";
+String transparent= "${commonImgPath}transparent.png";
+String OBman2= "${commonImgPath}OBman2.png";
+String OBman4= "${commonImgPath}OBman4.png";
