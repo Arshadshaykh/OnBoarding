@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:on_boarding/img.dart';
 
 class OBImageWidget extends StatefulWidget {
-  String image;
-  double height;
-  OBImageWidget({Key? key, required this.image, required this.height})
+ 
+  OBImageWidget({Key? key})
       : super(key: key);
 
   @override
@@ -28,7 +27,7 @@ class _OBImageWidgetState extends State<OBImageWidget> {
             height: 270,
           ),
         ),
-
+    
            Center(
              child: Image.asset(OBphone,
               height: 270,
@@ -36,8 +35,8 @@ class _OBImageWidgetState extends State<OBImageWidget> {
            ),
         
         Positioned(
-          left: 84,
-          top: 269,
+          left: 40,
+          top: 300,
           child: Image.asset(OBwoman,
             height: 158,
           ),

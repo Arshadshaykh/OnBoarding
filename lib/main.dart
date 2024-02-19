@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:on_boarding/img.dart';
 import 'package:on_boarding/ob_image_widget.dart';
+import 'package:on_boarding/test.dart';
 
 void main() {
   runApp(MaterialApp(home: const MyApp()));
@@ -92,6 +93,7 @@ class _MyPageViewState extends State<MyPageView>
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: MyHomePage(),
         // PageView.builder(
@@ -158,15 +160,22 @@ class _MyHomePageState extends State<MyHomePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
+      body: Column(
         children: [
-          
-          PageView.builder(
-            controller: _controller,
-            itemCount: 4,
-            itemBuilder: (context, index) {
-              return OnboardingImage(context, index);
-            },
+          Expanded(
+            child: Stack(
+              fit: StackFit.loose,
+              children: [
+                
+                PageView.builder(
+                  controller: _controller,
+                  itemCount: 4,
+                  itemBuilder: (context, index) {
+                    return OnboardingImage(context,index);
+                  },
+                ),
+              ],
+            ),
           ),
         ],
       ),
@@ -178,9 +187,11 @@ class _MyHomePageState extends State<MyHomePage>
 
 Widget OnboardingImage(context, index) {
   return Stack(
+    alignment: Alignment.center,
+    fit: StackFit.loose,
     children: [
 
-      SizedBox(height: 500,width: 500,child: OBImageWidget(image: OBMobileChat, height: 150,)),
+      SizedBox(height: 426,width: 380,child: AvailableCreditComponent(index: index,)),
       // buildImageWidget(
       //         index: index,
       //         imagePath: index == 0
